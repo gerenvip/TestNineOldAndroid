@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+
+    <Button
+            android:id="@+id/bt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="染色U"
+            android:onClick="startSecond"
+            />
+
+    <Button
+            android:id="@+id/bt_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:onClick="startThird"
+            android:layout_below="@id/bt_second"
+            />
+
+    <Button
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="record"
+            android:onClick="startRecord"
+            android:layout_below="@id/bt_third"
+            />
+
+    <Button
+            android:id="@+id/rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转"
+            android:onClick="rotate"
+            android:layout_below="@id/bt_record"
+            />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rotate"
+            android:onClick="stop"
+            android:text="启动/停止动画"
+            />
+    <LinearLayout
+            android:layout_below="@id/bt_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+        <ImageView
+                android:id="@+id/iv_i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:src="@drawable/i"
+                android:layout_centerHorizontal="true"
+                />
+
+        <ImageView
+                android:id="@+id/iv_u1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:src="@drawable/u"
+                android:visibility="invisible"
+                />
+
+        <ImageView
+                android:id="@+id/iv_u2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/u"
+                android:visibility="invisible"
+                />
+    </LinearLayout>
+</RelativeLayout>
+

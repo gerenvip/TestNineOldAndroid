@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始暂停"
+            android:onClick="start_stop"
+            />
+    <ImageView
+            android:id="@+id/im_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh_icon"
+            android:layout_centerInParent="true"
+            />
+</RelativeLayout>
